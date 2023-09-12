@@ -3,7 +3,8 @@ import ProjectsCard from './ProjectsCard.vue'
 export default {
     name: 'ProjectsList',
     components: { ProjectsCard },
-    props: { projects: Array }
+    props: { projects: Array },
+
 };
 </script>
 
