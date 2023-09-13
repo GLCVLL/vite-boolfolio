@@ -6,6 +6,7 @@ import HomePage from '../pages/HomePage.vue';
 import ProjectPage from '../pages/ProjectPage.vue';
 import NotFoundPage from '../pages/NotFoundPage.vue';
 import ProjectDetailPage from '../pages/ProjectDetailPage.vue';
+import ContactPage from '../pages/ContactPage.vue';
 
 
 //creiamo il router
@@ -17,6 +18,8 @@ const router = createRouter({
         {  path:'/', name:'home', component: HomePage},
         {  path:'/projects/:id', name:'project-detail', component: ProjectDetailPage},
         {  path:'/project', name:'project', component: ProjectPage},
+        {  path:'/contact', name:'contact', component: ContactPage},
+
         {  path:'/not-found', name:'not-found', component: NotFoundPage},
         {  path:'/:patchMatch(.*)*', redirect: '/not-found'},
     ]

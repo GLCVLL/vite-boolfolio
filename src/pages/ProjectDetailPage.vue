@@ -15,7 +15,7 @@ export default {
             const endpoint = apiBaseUri + this.$route.params.id;
             axios.get(endpoint)
                 .then(res => { this.project = res.data; })
-                .catch(err => { console.error(err) })
+                .catch(err => { this.$router.push({ name: 'not-found' }) })
                 .then(() => { this.isLoading = false });
         }
     },

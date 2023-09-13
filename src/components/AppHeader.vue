@@ -20,6 +20,9 @@ export default {
                     <li class="nav-item">
                         <RouterLink class="nav-link" :to="{ name: 'project' }">Projects</RouterLink>
                     </li>
+                    <li class="nav-item">
+                        <RouterLink class="nav-link" :to="{ name: 'contact' }">Contact Us</RouterLink>
+                    </li>
                 </ul>
             </div>
         </div>
